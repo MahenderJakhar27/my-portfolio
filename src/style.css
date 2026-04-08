@@ -111,6 +111,7 @@ section {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  border-radius: 24px;
 }
 
 .card:hover {
