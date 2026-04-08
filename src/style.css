@@ -45,7 +45,7 @@ h1, h2, h3 {
 
 /* Container */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -100,12 +100,6 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-}           
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
 }
 
 /* Project Cards */
@@ -195,18 +189,15 @@ nav.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;    
 }
 
 .logo {
   font-family: 'Outfit', sans-serif;
   font-weight: 800;
-  font-size: 2rem;                 /* bigger */
-  display: flex;
-  align-items: center;             /* vertical center */
-  letter-spacing: 1px;
+  font-size: 1.5rem;
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -369,23 +360,6 @@ footer {
   .nav-links { display: none; }
   .timeline::after { left: 31px; }
   .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
-  .timeline-item::after { left: 24px; }
-  .right { left: 0; }
-}
-@media (max-width: 768px) {
-  section { padding: 4rem 0; }
-  .nav-links { display: none; }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline::after { left: 31px; }
-  .timeline-item {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
   .timeline-item::after { left: 24px; }
   .right { left: 0; }
 }
